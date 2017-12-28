@@ -1,4 +1,10 @@
-# gbdk-n
+# gbdk3_stdlib
+
+This is a fork of https://github.com/andreasjhkarlsson/gbdk-n. Andreas got a good chunk of the old, useful GBDK libraries working in sdcc and I'm using theirw work as a starting point for my own toolchain.
+
+Building requires that you _not_ link against sdcc's standard crt0. Currently, the crt0.s file in this repo seems to lock the cart type, so you may need to add a copy to your file if you need a larger cart.  I'll investigate as I go.
+
+
 
 #### Background
 
@@ -8,7 +14,7 @@ The latest update of GBDK was a long time ago (mid 2002). Since then the SDCC co
 
 However GBDK is still useful since it contains libraries for developing applications for the gameboy family. This project aims to update the libraries to be compatible with new versions of SDCC and provide helpers for building roms.
 
-The GBDK libraries are copied from the latest source release on sourceforge: http://sourceforge.net/projects/gbdk/files/gbdk/2.96/
+The GBDK libraries were copied from the latest source release on sourceforge: http://sourceforge.net/projects/gbdk/files/gbdk/2.96/
 
 #### Usage
 
